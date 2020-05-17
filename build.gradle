@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:2.0.4.RELEASE"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile 'org.springframework.boot:spring-boot-starter'
+    compile 'org.springframework.boot:spring-boot-starter-web:'
+
+    compile 'io.projectreactor:reactor-core:3.1.8.RELEASE'
+
+    compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.9.0'
+    
+    compile 'com.trivago:triava:1.0.4'
+    
+    compileOnly "org.projectlombok:lombok:1.18.2"
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+}

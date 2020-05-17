@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: hoteldeals
+
+server:
+  port: 8080
+  error.whitelabel.enabled: false
+
+platformpricecalculation:
+  csv:
+    filename: platform_pricecalculation.csv
